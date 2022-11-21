@@ -1,5 +1,5 @@
-import org.junit.jupiter.api.Assertions;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class CashBackHackerTest {
 
@@ -9,7 +9,7 @@ public class CashBackHackerTest {
         int amount = 900;
         int actual = service.remain(amount);
         int expected = 100;
-        Assertions.assertEquals(actual, expected);
+        Assert.assertEquals(actual, expected);
     }
 
 }
